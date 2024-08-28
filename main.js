@@ -6,16 +6,9 @@ let canPlaySong = false;
 let isStarted = false;
 
 function start() {
-  if (canPlaySong) {
-    hideBtn();
-    showRestartBtn();
-    audio.play();
-    pig.style.display = "flex";
-  } else {
-    console.log("Đang tải nhạc...");
-    btn.innerText = "Đang tải nhạc ...";
-    isStarted = true;
-  }
+  hideBtn();
+  showRestartBtn();
+  pig.style.display = "flex";
 }
 
 btn.addEventListener("click", start);
